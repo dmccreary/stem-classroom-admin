@@ -5,13 +5,11 @@ Based on your situation without Education Upgrade, here are streamlined steps to
 ## Faster Setup Process
 
 ### Step 1: Enable Linux Development Environment
-1. Open **Settings** (click time, then gear icon)
-2. Scroll to **About ChromeOS** → **Developers**
-3. Click **Set up** next to "Linux development environment"
-4. Follow prompts (allocate at least 10GB disk space)
-5. Wait for installation (5-10 minutes)
+
+[Go to the Setting up ChromeOS in Developer Mode](setting-up-developer-mode.md)
 
 ### Step 2: Efficient Thonny Installation
+
 Instead of using `apt install thonny` (which gives older versions), use the official installer:
 
 ```bash
@@ -53,24 +51,9 @@ EOF
 chmod +x ~/.local/share/applications/thonny.desktop
 ```
 
-## Time-Saving Tips
-
-### Use Container Backup/Restore
-After configuring one Chromebook completely, you can back up the Linux container and restore it to other devices:
-
-**Create backup on first device:**
-1. Open **Terminal**
-2. Run: `vmc export termina`
-3. This creates a backup file in Downloads folder
-4. Copy this file to a USB drive
-
-**Restore on other devices:**
-1. Enable Linux development environment
-2. Copy backup file to Downloads
-3. Run: `vmc import termina [backup-filename]`
-4. Restart Linux container
 
 ### Batch Script Approach
+
 Create a setup script to automate the software installation:
 
 ```bash
@@ -109,92 +92,68 @@ echo "Go to Settings > Developers > Linux > Manage USB devices to enable your ha
 
 Run with: `bash setup_thonny.sh`
 
-## Guest Account Limitations
 
-**Important consideration:** If Chromebooks are managed by your school, Linux development environment might be disabled for guest accounts. You may need to:
+## Step-by-Step: Create a Thonny Launcher on ChromeOS
 
-- Use individual student accounts instead of guest accounts
-- Check with your IT department about Linux policies
-- Consider using web-based Python IDEs as an alternative
+### 1. **Create a `.desktop` file**
 
-This approach should reduce your setup time from several hours to about 15-20 minutes per device, especially if you use the container backup/restore method after setting up the first one.
-
-# Step by Step Guide for Setting Up Developer Mode
-
-## How to Put a Chromebook into Developer Mode: Step-by-Step Guide
-
-> ⚠️ **Warning:** Enabling Developer Mode will wipe all local data, including files, apps, and settings. Be sure to back up anything important before you begin.
-
-## ✅ Step 0: Prepare
-
-* **Backup your data** (Google Drive, USB stick, or external hard drive).
-* Make sure your **Chromebook is charged or plugged in**.
-* Know that Developer Mode **disables verified boot**, so you’ll see a scary screen every time you start up — this is expected.
-
-## 🧑‍💻 Step 1: Enter Recovery Mode
-
-1. Turn off your Chromebook.
-2. Press and hold these keys simultaneously:
-
-   * **Esc** + **Refresh (🔁)**, then press the **Power** button.
-3. Release all keys when you see a **white screen with a yellow exclamation mark** or a message like "Chrome OS is missing or damaged."
-
-## ⚙️ Step 2: Enable Developer Mode
-
-1. On the recovery screen, press **Ctrl + D**.
-2. You will be prompted:
-   “To turn OS verification OFF, press ENTER.”
-3. Press **Enter**.
-
-## 🧹 Step 3: Wait for Powerwash (Device Reset)
-
-* The system will reboot and begin the **transition to Developer Mode**.
-* This takes **5 to 10 minutes**. You’ll see a screen that says:
-
-  > "Preparing system for Developer Mode. This may take a while."
-
-This process **erases all local data** (Powerwash), and once complete, the device will reboot again.
-
-## ⚠️ Step 4: Startup Behavior in Developer Mode
-
-Every time you boot, you’ll see a **“OS verification is OFF”** screen.
-
-* To continue booting: press **Ctrl + D** or wait 30 seconds.
-* To go back to normal mode: press **Spacebar**, then confirm.
-
-## 🛠️ Step 5: Access the Linux Shell (Crosh and Bash)
-
-1. Once booted, sign into Wi-Fi.
-2. Press **Ctrl + Alt + T** to open **Crosh** (Chrome Shell).
-3. Type `shell` and press Enter.
-4. Now you are in a full Bash shell and can run commands like `sudo`, install dev tools, or run scripts.
-
-## 🧯 Optional: Disable Root File System Verification
-
-If you're doing root-level development:
+Run this command in your Linux terminal:
 
 ```bash
-sudo su
-/usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification
+nano ~/.local/share/applications/thonny.desktop
 ```
 
-Then reboot.
+### 2. **Paste the following contents** (adjusting username if needed):
 
-## 🔄 To Exit Developer Mode (Re-enable Verified Boot)
+```ini
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Thonny
+GenericName=Python IDE
+Comment=Thonny IDE for MicroPython and Python development
+Exec=env TK_USE_PLATFORM_MENUBAR=0 /home/urocdeveloper01/thonny-venv/bin/thonny
+Icon=python3
+Terminal=false
+Categories=Development;Education;IDE;
+StartupNotify=true
+```
 
-1. Reboot your Chromebook.
-2. On the "OS verification is OFF" screen, press **Spacebar**.
-3. Confirm when prompted — this will **Powerwash again** and return to normal mode.
+> Replace `/home/urocdeveloper01/` with the correct path if your username is different. You can check your username with `whoami`.
 
-## ✅ Developer Mode Enabled!
+### 💾 3. **Save and exit** the editor:
 
-You’re now ready to:
+* Press `Ctrl+O` to save
+* Press `Enter` to confirm the file name
+* Press `Ctrl+X` to exit Nano
 
-* Install custom Linux distros
-* Sideload APKs (on supported Chromebooks)
-* Access full root shell
-* Modify system files and services
+### 4. **(Optional) Add a custom icon**
 
-## References
+If you want a real Thonny icon:
 
-[YouTube Video Showing Steps to Put Chromebook into Developer Mode](https://youtu.be/q9PQDSwHPOI?si=epNp1VQfaP6SBy84)
+```bash
+mkdir -p ~/.local/share/icons
+wget https://en.wikipedia.org/wiki/Thonny#/media/File:Thonny_logo.png -O ~/.local/share/icons/thonny.png
+```
+
+Then change the `Icon=` line in the `.desktop` file:
+
+```ini
+Icon=/home/urocdeveloper01/.local/share/icons/thonny.png
+```
+
+### 5. **Refresh the launcher**
+
+Now restart your Linux container or run:
+
+```bash
+update-desktop-database ~/.local/share/applications
+```
+
+Then:
+
+* Open your ChromeOS launcher
+* Scroll down to **“Linux apps”**
+* You should now see **Thonny** with a Python icon!
+
+You can right-click it and pin it to the shelf for even faster access.
