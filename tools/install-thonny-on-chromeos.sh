@@ -1,6 +1,8 @@
 #!/bin/bash
 # Script location: https://github.com/dmccreary/stem-classroom-admin/tree/main/tools
-# 
+# To manuall install this run the following commands
+#   wget -O ~/bin/install-thonny-on-chromeos.sh https://raw.githubusercontent.com/dmccreary/stem-classroom-admin/refs/heads/main/tools/install-thonny-on-chromeos.sh
+#   chmod +x ~/bin/install-thonny-on-chromeos.sh
 
 # Automatically install Thonny and create a launcher for ChromeOS Linux (Crostini)
 # Safe for all usernames – uses $HOME and whoami dynamically
