@@ -74,3 +74,6 @@ You’re now ready to:
 * Access full root shell
 * Modify system files and services
 
+## References
+
+[YouTube Video Showing Steps to Put Chromebook into Developer Mode](https://youtu.be/q9PQDSwHPOI?si=epNp1VQfaP6SBy84)
