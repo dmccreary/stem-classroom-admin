@@ -10,9 +10,15 @@ nav:
   - Home: index.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
+  - Chromebook:
+    - Developer Mode: chromebook/developer-mode.md
+    - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
+    - Thonny Admin: chromebook/thonny-admin.md
+  - USB Debug: usb-debug.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
+  - License: license.md
   - Contact: contact.md
  
 # CoderDojo Microsite Standards from here down
