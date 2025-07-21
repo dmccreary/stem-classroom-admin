@@ -9,7 +9,7 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
-  - Concepts:
+  - General Concepts:
     - Introduction: concepts/index.md
     - USB Port Administration: concepts/usb-port-administration.md
     - USB Power Draw: concepts/usb-power-draw.md      
