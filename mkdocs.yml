@@ -17,6 +17,7 @@ nav:
     - Intro: macos/index.md
   - Windows:
     - Intro: windows/index.md
+    - Thonny Admin: windows/thonny-admin.md
   - Linux:
     - linux/index.md
   - USB Debug: usb-debug.md
