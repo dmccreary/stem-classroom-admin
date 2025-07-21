@@ -12,28 +12,24 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/stem-classroom-admin/usb-debug/">
+        <link rel="canonical" href="https://dmccreary.github.io/stem-classroom-admin/chromebook/usb-debug/">
       
       
-        <link rel="prev" href="../linux/">
       
       
-        <link rel="next" href="../glossary/">
-      
-      
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>USB Debug - STEM Classroom Administration with AI</title>
+        <title>Raspberry Pi Pico USB Issues on ChromeOS Crostini: Complete Troubleshooting Guide - STEM Classroom Administration with AI</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -94,9 +90,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="STEM Classroom Administration with AI" class="md-header__button md-logo" aria-label="STEM Classroom Administration with AI" data-md-component="logo">
+    <a href="../.." title="STEM Classroom Administration with AI" class="md-header__button md-logo" aria-label="STEM Classroom Administration with AI" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              USB Debug
+              Raspberry Pi Pico USB Issues on ChromeOS Crostini: Complete Troubleshooting Guide
             
           </span>
         </div>
@@ -203,9 +199,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="STEM Classroom Administration with AI" class="md-nav__button md-logo" aria-label="STEM Classroom Administration with AI" data-md-component="logo">
+    <a href="../.." title="STEM Classroom Administration with AI" class="md-nav__button md-logo" aria-label="STEM Classroom Administration with AI" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     STEM Classroom Administration with AI
@@ -232,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -254,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   
@@ -301,7 +297,7 @@
   
   
   
-    <a href="../concepts/" class="md-nav__link">
+    <a href="../../concepts/" class="md-nav__link">
       
   
   
@@ -352,7 +348,7 @@
   
   
   
-    <a href="../chromebook/developer-mode/" class="md-nav__link">
+    <a href="../developer-mode/" class="md-nav__link">
       
   
   
@@ -383,8 +379,6 @@
     
       
         
-          
-        
       
     
     
@@ -401,7 +395,8 @@
   
   
   
-    <a href="../macos/" class="md-nav__link">
+    <a href="../../macos/index.md
+- chromebook/index.md - macos/usb-ports.md" class="md-nav__link">
       
   
   
@@ -452,7 +447,7 @@
   
   
   
-    <a href="../windows/" class="md-nav__link">
+    <a href="../../windows/" class="md-nav__link">
       
   
   
@@ -501,7 +496,7 @@
   
   
   
-    <a href="../linux/" class="md-nav__link">
+    <a href="../../linux/" class="md-nav__link">
       
   
   
@@ -526,32 +521,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    USB Debug
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../usb-debug.md" class="md-nav__link">
         
   
   
@@ -562,254 +535,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-the-core-issue" class="md-nav__link">
-    <span class="md-ellipsis">
-      Understanding the core issue
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#immediate-diagnostic-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Immediate diagnostic steps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-by-step-resolution-procedures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step-by-step resolution procedures
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step-by-step resolution procedures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-1-container-restart-recommended-first-attempt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 1: Container restart (recommended first attempt)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-2-usb-subsystem-reset-within-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 2: USB subsystem reset within container
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-3-chromeos-usb-device-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 3: ChromeOS USB device management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-4-complete-vm-restart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 4: Complete VM restart
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#thonny-ide-connectivity-restoration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Thonny IDE connectivity restoration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Thonny IDE connectivity restoration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-thonny-correctly-on-chromeos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Thonny correctly on ChromeOS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-serial-port-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure serial port permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-up-thonny-interpreter" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set up Thonny interpreter
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-troubleshooting-for-persistent-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced troubleshooting for persistent issues
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced troubleshooting for persistent issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fix-udev-rules-and-permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix udev rules and permissions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hardware-level-pico-reset-procedures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware-level Pico reset procedures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprehensive-system-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprehensive system verification
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prevention-and-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prevention and monitoring
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prevention and monitoring">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-up-usb-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set up USB monitoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-problematic-power-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable problematic power management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-all-else-fails" class="md-nav__link">
-    <span class="md-ellipsis">
-      When all else fails
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="When all else fails">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alternative-development-approaches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alternative development approaches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enterpriseschool-chromebook-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enterprise/school Chromebook considerations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resolution-verification-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resolution verification checklist
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -821,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   
@@ -843,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   
@@ -865,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   
@@ -887,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   
@@ -909,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -1194,7 +919,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/stem-classroom-admin/blob/master/docs/usb-debug.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/stem-classroom-admin/blob/master/docs/chromebook/usb-debug.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1497,44 +1222,6 @@ sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
         <footer class="md-footer">
   
     
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../linux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Rasberry Pi and Linux">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Rasberry Pi and Linux
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Glossary
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1560,10 +1247,10 @@ sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
