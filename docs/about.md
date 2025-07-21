@@ -1,4 +1,4 @@
-# About This Website
+# About The STEM Coding Classroom Administrator Website
 
 This website is intended for teachers or computer administrators that are creating environments that are used by students learning STEM and specifically learning computational thinking using
 physical computing.  Our focus is how to setup and configure computers that allow

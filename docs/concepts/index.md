@@ -1,4 +1,4 @@
-# Core Concepts in Administrating a STEM Classroom with Physical Computing
+# Core Concepts in Administrating a STEM Coding Classroom with Physical Computing and AI
 
 ## USB Port Administration
 
