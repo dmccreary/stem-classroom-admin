@@ -9,6 +9,9 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Concepts:
+    - Introduction: concepts/index.md
+    - USB Port Administration: concepts/usb-port-administration.md
   - Chromebook:
     - Developer Mode: chromebook/developer-mode.md
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md

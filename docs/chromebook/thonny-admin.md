@@ -1,16 +1,22 @@
 # Thonny Admin
 
-Based on your situation without Education Upgrade, here are streamlined steps to configure each Chromebook more efficiently:
+Here are steps to configure Thonny on the Chromebook.  Note that you
+must have the Chromebook to first be in [Developer Mode](developer-mode.md).
 
-## Faster Setup Process
+Due to security concerns, there is NO automatic way to allow a non-standard USB device
+to be connected.  You MUST got to the Chromebook Setting and enable the USB device each time you plug
+any non-standard USB devices into the USB port.
+
+## Setup Process
 
 ### Step 1: Enable Linux Development Environment
 
 [Go to the Setting up ChromeOS in Developer Mode](setting-up-developer-mode.md)
 
-### Step 2: Efficient Thonny Installation
+### Step 2: Thonny Installation
 
-Instead of using `apt install thonny` (which gives older versions), use the official installer:
+Instead of using `apt install thonny` (which often installs older versions of Thonny), the best practices is to use the official installer
+that runs under pip directly from the Thonny website.
 
 ```bash
 # Update system first
@@ -23,6 +29,7 @@ bash <(wget -O - https://thonny.org/installer-for-linux)
 This method installs the current version (3.3.10+) rather than the outdated Debian package version, avoiding compatibility issues.
 
 ### Step 3: Configure USB Access
+
 1. Go to **Settings** → **About ChromeOS** → **Developers** → **Linux development environment**
 2. Click **Manage USB devices**
 3. Connect your USB device (Arduino, Raspberry Pi Pico, etc.)
@@ -31,6 +38,7 @@ This method installs the current version (3.3.10+) rather than the outdated Debi
 6. **Restart** the Linux container (Settings → Developers → Linux → Advanced → Restart)
 
 ### Step 4: Create Desktop Launcher
+
 Make Thonny easily accessible:
 
 ```bash
