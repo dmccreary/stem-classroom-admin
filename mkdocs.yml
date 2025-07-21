@@ -1,5 +1,5 @@
-site_name: Mkdocs Template Site
-site_description: 'DESCRIPTION All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_name: STEM Classroom Administration with AI
+site_description: 'This GitHub repo helps teachers learn to use AI to setup and administer a STEM classroom with a focus on teaching computational thinking using physical computing and microcontrollers.'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
 site_url: 'https://dmccreary.github.io/stem-classroom-admin/'
@@ -8,12 +8,17 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
-  - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
+  - About: about.md
   - Chromebook:
     - Developer Mode: chromebook/developer-mode.md
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
     - Thonny Admin: chromebook/thonny-admin.md
+  - MacOS:
+    - Intro: macos/index.md
+  - Windows:
+    - Intro: windows/index.md
+  - Linux:
+    - linux/index.md
   - USB Debug: usb-debug.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
@@ -28,7 +33,7 @@ theme:
   extra_css:
     - styles/custom.css
   logo: img/logo.png
-  # favicon: img/my-icon.png
+  favicon: img/favicon.ico
   palette:
     primary: 'blue'
     accent: 'orange'
