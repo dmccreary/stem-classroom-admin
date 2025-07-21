@@ -23,6 +23,7 @@ nav:
     - Thonny Admin: chromebook/thonny-admin.md
   - MacOS:
     - Intro: macos/index.md
+    - Mac USB Ports: - macos/usb-ports.md
   - Windows:
     - Intro: windows/index.md
     - Thonny Admin: windows/thonny-admin.md
