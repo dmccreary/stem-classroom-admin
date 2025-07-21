@@ -5,7 +5,7 @@
 One of the most challenging problem with setting up a STEM physical computing classroom us
 allowing students to plug in a USB device.  We cover this in this chapter:
 
-[USB Port Administration](usb-port-administration.md)
+[Go to the USB Port Administration Chapter](usb-port-administration.md)
 
 ## USB Power Draw
 
@@ -15,4 +15,8 @@ However, when students are driving motors or large sets of LEDs, we can run
 into problems.  This chapter guides you through the way computers supply
 power to USB devices and how to monitor and recover from power draw issues.
 
-[USB Power Draw](usb-power-draw.md)
+[Go to the USB Power Draw Chapter](usb-power-draw.md)
+
+## Generating Raspberry Pi Images
+
+[Go to the Generating Raspberry Pi Images Chapter](./gen-pi-images.md)
