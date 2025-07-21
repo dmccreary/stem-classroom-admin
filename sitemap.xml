@@ -37,6 +37,10 @@
          <lastmod>2025-07-21</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/</loc>
+         <lastmod>2025-07-21</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/developer-mode/</loc>
          <lastmod>2025-07-21</lastmod>
     </url>
@@ -49,11 +53,23 @@
          <lastmod>2025-07-21</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/</loc>
+         <lastmod>2025-07-21</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/usb-port-administration/</loc>
+         <lastmod>2025-07-21</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/linux/</loc>
          <lastmod>2025-07-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/windows/</loc>
+         <lastmod>2025-07-21</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/windows/thonny-admin/</loc>
          <lastmod>2025-07-21</lastmod>
     </url>
 </urlset>
