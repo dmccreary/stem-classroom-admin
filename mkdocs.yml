@@ -12,6 +12,7 @@ nav:
   - Concepts:
     - Introduction: concepts/index.md
     - USB Port Administration: concepts/usb-port-administration.md
+    - USB Power Draw: concepts/usb-power-draw.md
   - Chromebook:
     - Developer Mode: chromebook/developer-mode.md
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
