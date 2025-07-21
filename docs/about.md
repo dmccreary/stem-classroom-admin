@@ -23,6 +23,9 @@ Note that this website is intended for school computer and network administrator
 - [Robot Day](https://dmccreary.github.io/robot-day/) - a collection of resources for your school or museum to host a single day event or a course on robots
 - [Spectrum Analyzer](https://dmccreary.github.io/spectrum-analyzer/) - a $20 kit that uses a microphone and a display to analyze sound
 
+We also know that many STEM site administrators are using generative AI to help them automate classroom desktop maintenance.
+We have provide a [sample set of prompts](./prompts/index.md) you can use to help you get started.
+
 We hope you find these tools useful and we look forward to your feedback.
 Feel free to use the [GitHub issues](https://github.com/dmccreary/stem-classroom-admin/issues) if you find any areas that need correction or improvement.
 

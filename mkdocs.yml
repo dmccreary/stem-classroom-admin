@@ -29,7 +29,8 @@ nav:
     - Thonny Admin: windows/thonny-admin.md
   - Linux:
     - linux/index.md
-  - USB Debug: usb-debug.md
+  - Prompts:
+    - Introduction: prompts/index.md`
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
