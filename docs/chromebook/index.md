@@ -7,3 +7,7 @@
 ## Thonny Administration
 
 [Go to the Thonny Administration Page](thonny-admin.md)
+
+## USB Debugging
+
+[USB Debugging](usb-debug.md)

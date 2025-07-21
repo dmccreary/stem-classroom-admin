@@ -18,7 +18,11 @@ nav:
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
     - Thonny Admin: chromebook/thonny-admin.md
   - MacOS:
-    - Intro: macos/index.md
+    - Intro: macos/index.md             
+
+             - chromebook/index.md
+             - macos/usb-ports.md
+
   - Windows:
     - Intro: windows/index.md
     - Thonny Admin: windows/thonny-admin.md
