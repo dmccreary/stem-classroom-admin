@@ -15,20 +15,18 @@ nav:
     - USB Power Draw: concepts/usb-power-draw.md
     - Generating Pi Images: concepts/gen-pi-images.md
   - Chromebook:
+    - Introduction: chromebook/index.md
     - Developer Mode: chromebook/developer-mode.md
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
+    - USB Debugging: chromebook/usb-debug.md
     - Thonny Admin: chromebook/thonny-admin.md
   - MacOS:
     - Intro: macos/index.md             
-
-             - chromebook/index.md
-             - macos/usb-ports.md
-
   - Windows:
     - Intro: windows/index.md
     - Thonny Admin: windows/thonny-admin.md
   - Linux:
-    - linux/index.md
+    - Introduction: linux/index.md
   - Prompts:
     - Introduction: prompts/index.md`
   - Glossary: glossary.md
