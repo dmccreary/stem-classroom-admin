@@ -12,7 +12,8 @@ nav:
   - Concepts:
     - Introduction: concepts/index.md
     - USB Port Administration: concepts/usb-port-administration.md
-    - USB Power Draw: concepts/usb-power-draw.md
+    - USB Power Draw: concepts/usb-power-draw.md      
+    - Measuring Power Draw: concepts/measuring-power-draw.md      
     - Generating Pi Images: concepts/gen-pi-images.md
   - Chromebook:
     - Introduction: chromebook/index.md
@@ -21,14 +22,15 @@ nav:
     - USB Debugging: chromebook/usb-debug.md
     - Thonny Admin: chromebook/thonny-admin.md
   - MacOS:
-    - Intro: macos/index.md             
+    - Intro: macos/index.md
   - Windows:
     - Intro: windows/index.md
     - Thonny Admin: windows/thonny-admin.md
   - Linux:
     - Introduction: linux/index.md
   - Prompts:
-    - Introduction: prompts/index.md`
+    - Introduction: prompts/index.md
+    - Glossary: prompts/glossary.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md

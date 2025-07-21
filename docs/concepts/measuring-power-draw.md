@@ -2,7 +2,7 @@
 
 ![](led-strip-power-draw.jpg)
 
-We can purchase a low cost 
+We can purchase a low cost
 
 ## Power Draw Test on an LED Strip
 

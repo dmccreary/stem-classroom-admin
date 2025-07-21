@@ -1,5 +1,7 @@
 # USB Power Management Challenges with Microcontrollers
 
+![](led-strip-power-draw.jpg)
+
 Whenever we connect a USB device to a computer, we must carefully consider how much power the USB device
 will draw and if the computer's port has sufficient power to supply the USB devices.
 
