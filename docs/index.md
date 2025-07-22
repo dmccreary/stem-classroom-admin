@@ -1,5 +1,7 @@
 # STEM Classroom Administration with AI
 
+![](./img/cover.png)
+
 Welcome to the STEM Classroom Administration with AI website!
 
 Our goal is to help you learn to use AI to generate powerful scripts to

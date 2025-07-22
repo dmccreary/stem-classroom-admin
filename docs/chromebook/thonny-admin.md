@@ -1,16 +1,75 @@
 # Thonny Admin
 
-Based on your situation without Education Upgrade, here are streamlined steps to configure each Chromebook more efficiently:
+![](./thonny-ide.png)
 
-## Faster Setup Process
+We want to give our students a great experience using Thonny.  Here are a few things to
+not about the screen image above.
+
+1. There is a Thonny icon directly on the desktop
+2. Thonny is configured to view both the files on the Raspberry Pi Pico (each lab has a file)
+3. Thonny can see the port `/dev/ttyACM0` and can connect directly to the Pico
+
+Getting to this stage is not difficult, but it does require going through
+several steps.  Here is a quick summary of these steps:
+
+1. Install Linux (Crostini)
+2. Open the terminal and install pip 
+3. Use pip to install Thonny
+4. Run Thonny from the command line or setup a desktop icon
+
+## Who Can Enable Linux (Crostini) on a Chromebook
+
+### ✅ Allowed:
+
+1. The Chromebook’s Owner account (the first Google account used to set up the device)
+2. User accounts with Linux enabled by the owner or admin
+3. Managed devices (school/work) only if the admin has allowed Linux
+
+### ❌ Not Allowed:
+
+1. Guest mode or Incognito users
+2. Child accounts (Family Link) by default
+3. Managed Chromebooks (e.g., issued by schools) where Linux is disabled via Google Admin Console
+
+Secondary accounts on the Chromebook, unless Linux is enabled per user
+
+## Steps
+
+### Step 1: Install Linux
+
+The only reliable way to run Thonny on a Chromebook to program a Raspberry Pi Pico is by using the Linux (Crostini) environment within ChromeOS. 
+
+### Step 2: Install Pip
+
+```sh
+sudo apt update
+sudo apt install python3-venv python3-pip -y
+```
+
+### Step 3: Install a Virtual Env and Put Thonny in it
+
+```sh
+python3 -m venv ~/thonny-venv
+source ~/thonny-venv/bin/activate
+pip install thonny
+```
+
+### Step 4: Run Thonny from the Terminal
+
+```sh
+~/thonny-venv/bin/thonny
+```
+
+Note:  You can also create an alias to make this command earlier.
+
+### Faster Setup Process
 
 ### Step 1: Enable Linux Development Environment
 
 [Go to the Setting up ChromeOS in Developer Mode](setting-up-developer-mode.md)
 
-### Step 2: Efficient Thonny Installation
 
-Instead of using `apt install thonny` (which gives older versions), use the official installer:
+Note: Using `apt install thonny` can gives older versions, use the official installer:
 
 ```bash
 # Update system first
