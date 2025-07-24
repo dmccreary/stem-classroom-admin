@@ -1,3 +1,8 @@
 # License
 
-All content is license under creative commons shareakile non-commercial.
+his work is licensed under a Creative Commons
+Attribution-NonCommercial 4.0 International License.
+
+See the file in docs/license.md file for details.
+
+See the [License](docs/license.md) for details.

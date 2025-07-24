@@ -82,6 +82,7 @@ bash <(wget -O - https://thonny.org/installer-for-linux)
 This method installs the current version (3.3.10+) rather than the outdated Debian package version, avoiding compatibility issues.
 
 ### Step 3: Configure USB Access
+
 1. Go to **Settings** → **About ChromeOS** → **Developers** → **Linux development environment**
 2. Click **Manage USB devices**
 3. Connect your USB device (Arduino, Raspberry Pi Pico, etc.)
@@ -90,6 +91,7 @@ This method installs the current version (3.3.10+) rather than the outdated Debi
 6. **Restart** the Linux container (Settings → Developers → Linux → Advanced → Restart)
 
 ### Step 4: Create Desktop Launcher
+
 Make Thonny easily accessible:
 
 ```bash

@@ -2,9 +2,9 @@
 # This script installs Thonny and creates a desktop launcher icon for Chromebooks ChromeOS Linux (Crostini)
 # Note that ChromeOS Linix must be installed
 # Only tested on ChromOS running developer mode
-# Script location: https://github.com/dmccreary/stem-classroom-admin/tree/main/tools
+# Script location: https://github.com/dmccreary/stem-classroom-admin/tree/main/tools/chromebooks/install-thonny-on-chromeos.sh
 # To manuall install this run the following commands
-#   wget -O ~/bin/install-thonny-on-chromeos.sh https://raw.githubusercontent.com/dmccreary/stem-classroom-admin/refs/heads/main/tools/install-thonny-on-chromeos.sh
+#   wget -O ~/bin/install-thonny-on-chromeos.sh https://raw.githubusercontent.com/dmccreary/stem-classroom-admin/refs/heads/main/tools/chromebooks/install-thonny-on-chromeos.sh
 #   chmod +x ~/bin/install-thonny-on-chromeos.sh
 
 set -e  # Exit on error

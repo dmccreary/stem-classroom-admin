@@ -9,17 +9,29 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - General Concepts:
+    - Introduction: concepts/index.md
+    - USB Port Administration: concepts/usb-port-administration.md
+    - USB Power Draw: concepts/usb-power-draw.md      
+    - Measuring Power Draw: concepts/measuring-power-draw.md      
+    - Generating Pi Images: concepts/gen-pi-images.md
   - Chromebook:
+    - Introduction: chromebook/index.md
     - Developer Mode: chromebook/developer-mode.md
     - Setting Up Developer Mode: chromebook/setting-up-developer-mode.md
+    - USB Debugging: chromebook/usb-debug.md
     - Thonny Admin: chromebook/thonny-admin.md
   - MacOS:
     - Intro: macos/index.md
+    - Mac USB Ports: macos/usb-ports.md
   - Windows:
     - Intro: windows/index.md
+    - Thonny Admin: windows/thonny-admin.md
   - Linux:
-    - linux/index.md
-  - USB Debug: usb-debug.md
+    - Introduction: linux/index.md
+  - Prompts:
+    - Introduction: prompts/index.md
+    - Glossary: prompts/glossary.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
