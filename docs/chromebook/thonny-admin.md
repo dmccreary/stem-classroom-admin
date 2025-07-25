@@ -39,7 +39,7 @@ Secondary accounts on the Chromebook, unless Linux is enabled per user
 
 The only reliable way to run Thonny on a Chromebook to program a Raspberry Pi Pico is by using the Linux (Crostini) environment within ChromeOS. 
 
-### Step 2: Install Pip
+### Step 2: Install Pip and Tkinter (TK)
 
 ```sh
 sudo apt update
