@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/stem-classroom-admin/chromebook/setting-up-developer-mode/">
+        <link rel="canonical" href="https://dmccreary.github.io/stem-classroom-admin/concepts/measuring-power-draw/">
       
       
-        <link rel="prev" href="../developer-mode/">
+        <link rel="prev" href="../usb-power-draw/">
       
       
-        <link rel="next" href="../usb-debug/">
+        <link rel="next" href="../gen-pi-images/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Setting Up Developer Mode - STEM Classroom Administration with AI</title>
+        <title>Measuring Power Draw - STEM Classroom Administration with AI</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-by-step-guide-for-setting-up-developer-mode" class="md-skip">
+        <a href="#measuring-power-draw" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setting Up Developer Mode
+              Measuring Power Draw
             
           </span>
         </div>
@@ -273,6 +273,272 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    General Concepts
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            General Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usb-port-administration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    USB Port Administration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usb-power-draw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    USB Power Draw
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Measuring Power Draw
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Measuring Power Draw
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculating-power-from-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Power from Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating Power from Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-usb-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard USB Voltage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-power-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Power Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-draw-test-on-an-led-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Draw Test on an LED Strip
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gen-pi-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generating Pi Images
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -305,12 +571,12 @@
   
   
   
-    <a href="../../concepts/" class="md-nav__link">
+    <a href="../../chromebook/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
-    General Concepts
+    Chromebook
     
   </span>
   
@@ -321,311 +587,6 @@
     </a>
   
 
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Chromebook
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Chromebook
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-mode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Developer Mode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Setting Up Developer Mode
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Setting Up Developer Mode
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-put-a-chromebook-into-developer-mode-step-by-step-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to Put a Chromebook into Developer Mode: Step-by-Step Guide
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-0-prepare" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Step 0: Prepare
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-enter-recovery-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧑‍💻 Step 1: Enter Recovery Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-enable-developer-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Step 2: Enable Developer Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-wait-for-powerwash-device-reset" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧹 Step 3: Wait for Powerwash (Device Reset)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-startup-behavior-in-developer-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚠️ Step 4: Startup Behavior in Developer Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-access-the-linux-shell-crosh-and-bash" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Step 5: Access the Linux Shell (Crosh and Bash)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-disable-root-file-system-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧯 Optional: Disable Root File System Verification
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-exit-developer-mode-re-enable-verified-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 To Exit Developer Mode (Re-enable Verified Boot)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-mode-enabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Developer Mode Enabled!
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../usb-debug/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    USB Debugging
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../thonny-admin/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Thonny Admin
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -970,99 +931,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-put-a-chromebook-into-developer-mode-step-by-step-guide" class="md-nav__link">
+  <a href="#calculating-power-from-current" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Put a Chromebook into Developer Mode: Step-by-Step Guide
+      Calculating Power from Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating Power from Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-usb-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard USB Voltage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-power-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Power Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-0-prepare" class="md-nav__link">
+  <a href="#power-draw-test-on-an-led-strip" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Step 0: Prepare
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-enter-recovery-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧑‍💻 Step 1: Enter Recovery Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-enable-developer-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Step 2: Enable Developer Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-wait-for-powerwash-device-reset" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧹 Step 3: Wait for Powerwash (Device Reset)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-startup-behavior-in-developer-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚠️ Step 4: Startup Behavior in Developer Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-access-the-linux-shell-crosh-and-bash" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Step 5: Access the Linux Shell (Crosh and Bash)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-disable-root-file-system-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧯 Optional: Disable Root File System Verification
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-exit-developer-mode-re-enable-verified-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 To Exit Developer Mode (Re-enable Verified Boot)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-mode-enabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Developer Mode Enabled!
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
+      Power Draw Test on an LED Strip
     </span>
   </a>
   
@@ -1084,7 +1006,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/stem-classroom-admin/blob/master/docs/chromebook/setting-up-developer-mode.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/stem-classroom-admin/blob/master/docs/concepts/measuring-power-draw.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1092,80 +1014,137 @@
   
 
 
-<h1 id="step-by-step-guide-for-setting-up-developer-mode">Step by Step Guide for Setting Up Developer Mode</h1>
-<h2 id="how-to-put-a-chromebook-into-developer-mode-step-by-step-guide">How to Put a Chromebook into Developer Mode: Step-by-Step Guide</h2>
-<blockquote>
-<p>⚠️ <strong>Warning:</strong> Enabling Developer Mode will wipe all local data, including files, apps, and settings. Be sure to back up anything important before you begin.</p>
-</blockquote>
-<h2 id="step-0-prepare">✅ Step 0: Prepare</h2>
+<h1 id="measuring-power-draw">Measuring Power Draw</h1>
+<p><img alt="" src="../led-strip-power-draw.jpg" /></p>
+<p>We can purchase a low cost USB power monitor on e-Bay for under $7.00:</p>
+<p><a href="https://www.ebay.com/sch/i.html?_nkw=USB+Power+Meter+Voltage+Current&amp;_sacat=0&amp;_odkw=USB+Power+Monitor&amp;_osacat=0&amp;_sop=15&amp;_ipg=200">eBay Search for USB Power Meter Voltage Current</a></p>
+<p>Although these meters are no accurate for current under 30 milliamps, they are very low cost and easy to use.</p>
+<p>Just place the USB Power Meter between your USB port and the device under test.  Many of these meters
+show the voltage input (which should be about 5 volts) and the current passing through.</p>
+<h2 id="calculating-power-from-current">Calculating Power from Current</h2>
+<p>Calculating USB Power Consumption</p>
+<h3 id="basic-formula">Basic Formula</h3>
+<p>Power consumption from a USB port is calculated using the fundamental electrical equation:
+Power (Watts) = Voltage (Volts) × Current (Amperes)</p>
+<h3 id="standard-usb-voltage">Standard USB Voltage</h3>
+<p>USB ports provide a standardized 5 volts (though this may drop slightly under heavy load to around 4.5-4.8V).
+Simple Calculation</p>
+<p>For a standard 5V USB port:</p>
+<p>Power (W) = 5V × Current (A)</p>
+<p>Practical Examples:</p>
 <ul>
-<li><strong>Backup your data</strong> (Google Drive, USB stick, or external hard drive).</li>
-<li>Make sure your <strong>Chromebook is charged or plugged in</strong>.</li>
-<li>Know that Developer Mode <strong>disables verified boot</strong>, so you’ll see a scary screen every time you start up — this is expected.</li>
+<li>Device drawing 0.1A (100mA): 5V × 0.1A = 0.5 watts</li>
+<li>Device drawing 0.5A (500mA): 5V × 0.5A = 2.5 watts</li>
+<li>Device drawing 0.9A (900mA): 5V × 0.9A = 4.5 watts</li>
 </ul>
-<h2 id="step-1-enter-recovery-mode">🧑‍💻 Step 1: Enter Recovery Mode</h2>
-<ol>
-<li>Turn off your Chromebook.</li>
-<li>
-<p>Press and hold these keys simultaneously:</p>
-</li>
-<li>
-<p><strong>Esc</strong> + <strong>Refresh (🔁)</strong>, then press the <strong>Power</strong> button.</p>
-</li>
-<li>Release all keys when you see a <strong>white screen with a yellow exclamation mark</strong> or a message like "Chrome OS is missing or damaged."</li>
-</ol>
-<h2 id="step-2-enable-developer-mode">⚙️ Step 2: Enable Developer Mode</h2>
-<ol>
-<li>On the recovery screen, press <strong>Ctrl + D</strong>.</li>
-<li>You will be prompted:
-   “To turn OS verification OFF, press ENTER.”</li>
-<li>Press <strong>Enter</strong>.</li>
-</ol>
-<h2 id="step-3-wait-for-powerwash-device-reset">🧹 Step 3: Wait for Powerwash (Device Reset)</h2>
+<h3 id="usb-power-limits">USB Power Limits</h3>
 <ul>
-<li>The system will reboot and begin the <strong>transition to Developer Mode</strong>.</li>
-<li>This takes <strong>5 to 10 minutes</strong>. You’ll see a screen that says:</li>
+<li>USB 2.0: Maximum 500mA (2.5W)</li>
+<li>USB 3.0: Maximum 900mA (4.5W)</li>
+<li>USB-C/PD: Can negotiate higher voltages and currents</li>
 </ul>
-<blockquote>
-<p>"Preparing system for Developer Mode. This may take a while."</p>
-</blockquote>
-<p>This process <strong>erases all local data</strong> (Powerwash), and once complete, the device will reboot again.</p>
-<h2 id="step-4-startup-behavior-in-developer-mode">⚠️ Step 4: Startup Behavior in Developer Mode</h2>
-<p>Every time you boot, you’ll see a <strong>“OS verification is OFF”</strong> screen.</p>
-<ul>
-<li>To continue booting: press <strong>Ctrl + D</strong> or wait 30 seconds.</li>
-<li>To go back to normal mode: press <strong>Spacebar</strong>, then confirm.</li>
-</ul>
-<h2 id="step-5-access-the-linux-shell-crosh-and-bash">🛠️ Step 5: Access the Linux Shell (Crosh and Bash)</h2>
-<ol>
-<li>Once booted, sign into Wi-Fi.</li>
-<li>Press <strong>Ctrl + Alt + T</strong> to open <strong>Crosh</strong> (Chrome Shell).</li>
-<li>Type <code>shell</code> and press Enter.</li>
-<li>Now you are in a full Bash shell and can run commands like <code>sudo</code>, install dev tools, or run scripts.</li>
-</ol>
-<h2 id="optional-disable-root-file-system-verification">🧯 Optional: Disable Root File System Verification</h2>
-<p>If you're doing root-level development:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>su
-/usr/share/vboot/bin/make_dev_ssd.sh<span class="w"> </span>--remove_rootfs_verification
+<h2 id="quick-reference">Quick Reference</h2>
+<p>If your USB power meter shows current in milliamps (mA), convert to amps by dividing by 1000, then multiply by 5:</p>
+<p>Power (W) = 5 × (Current in mA ÷ 1000)</p>
+<p>This calculation is essential when working with microcontrollers like the Raspberry Pi Pico to ensure you stay within USB power specifications and avoid triggering overcurrent protection.</p>
+<h2 id="power-draw-test-on-an-led-strip">Power Draw Test on an LED Strip</h2>
+<p>We can check how much power an short LED strip draws by setting the pixels to various
+colors and then measuring the total current being drawn.  In the sample
+code below we turn all 12 pixels on with different colors at maximum brightness.</p>
+<p>In the code below, we fist turn on all the red LEDs, then green and then blue.  After that we turn all three on and we can get the maximum current drawn.</p>
+<p>In while running the <code>sleep()</code> function mode, the Raspberry Pi Pico draws about 19.07 milliamps.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Power Test</span>
+<span class="c1"># Draw all the pixels a specific color and intensity and then watch the current</span>
+<span class="c1"># Use a USB current meter</span>
+<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="kn">from</span> <span class="nn">neopixel</span> <span class="kn">import</span> <span class="n">NeoPixel</span>
+<span class="kn">from</span> <span class="nn">utime</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="c1"># get the configuration information</span>
+<span class="kn">import</span> <span class="nn">config</span>
+
+<span class="n">np</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">NUMBER_PIXELS</span>
+<span class="n">strip</span> <span class="o">=</span> <span class="n">NeoPixel</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">NEOPIXEL_PIN</span><span class="p">),</span> <span class="n">np</span><span class="p">)</span>
+
+<span class="c1"># give enough time for the current meter to stabilize</span>
+<span class="n">sleep_time</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="c1"># make the strip red - the total power should be around 30 milliamps for a 12 pixel LED strip</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+    <span class="c1"># make the strip green</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+    <span class="c1"># make the strip blue</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+        <span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+    <span class="c1"># make the strip white total power should be around 45 milliamps</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+        <span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+    <span class="c1"># turn off the strip</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mf">.05</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<p>Then reboot.</p>
-<h2 id="to-exit-developer-mode-re-enable-verified-boot">🔄 To Exit Developer Mode (Re-enable Verified Boot)</h2>
-<ol>
-<li>Reboot your Chromebook.</li>
-<li>On the "OS verification is OFF" screen, press <strong>Spacebar</strong>.</li>
-<li>Confirm when prompted — this will <strong>Powerwash again</strong> and return to normal mode.</li>
-</ol>
-<h2 id="developer-mode-enabled">✅ Developer Mode Enabled!</h2>
-<p>You’re now ready to:</p>
-<ul>
-<li>Install custom Linux distros</li>
-<li>Sideload APKs (on supported Chromebooks)</li>
-<li>Access full root shell</li>
-<li>Modify system files and services</li>
-</ul>
-<h2 id="references">References</h2>
-<p><a href="https://youtu.be/q9PQDSwHPOI?si=epNp1VQfaP6SBy84">YouTube Video Showing Steps to Put Chromebook into Developer Mode</a></p>
 
 
 
@@ -1201,7 +1180,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../developer-mode/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Developer Mode">
+          <a href="../usb-power-draw/" class="md-footer__link md-footer__link--prev" aria-label="Previous: USB Power Draw">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1211,20 +1190,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Developer Mode
+                USB Power Draw
               </div>
             </div>
           </a>
         
         
           
-          <a href="../usb-debug/" class="md-footer__link md-footer__link--next" aria-label="Next: USB Debugging">
+          <a href="../gen-pi-images/" class="md-footer__link md-footer__link--next" aria-label="Next: Generating Pi Images">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                USB Debugging
+                Generating Pi Images
               </div>
             </div>
             <div class="md-footer__button md-icon">

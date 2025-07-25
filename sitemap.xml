@@ -2,54 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/about/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/contact/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/glossary/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/how-we-built-this-site/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/license/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/references/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
-         <loc>https://dmccreary.github.io/stem-classroom-admin/usb-debug/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/self-assement/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/</loc>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/developer-mode/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/setting-up-developer-mode/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/thonny-admin/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/chromebook/usb-debug/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/gen-pi-images/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/measuring-power-draw/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/usb-port-administration/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/concepts/usb-power-draw/</loc>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/linux/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/macos/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/macos/usb-ports/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/prompts/</loc>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/prompts/glossary/</loc>
+         <lastmod>2025-07-25</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/stem-classroom-admin/windows/</loc>
-         <lastmod>2025-07-22</lastmod>
+         <lastmod>2025-07-25</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/stem-classroom-admin/windows/thonny-admin/</loc>
+         <lastmod>2025-07-25</lastmod>
     </url>
 </urlset>
