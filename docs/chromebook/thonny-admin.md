@@ -43,8 +43,12 @@ The only reliable way to run Thonny on a Chromebook to program a Raspberry Pi Pi
 
 ```sh
 sudo apt update
-sudo apt install python3-venv python3-pip -y
+sudo apt install python3-venv python3-pip python3-tk -y
 ```
+
+!!! note
+    `tkinter`, which is installed via`python-tk` cannot be installed via pip. It
+    must be installed with apt.  The key point is that python3-tk must be installed using your system's package manager, not pip.
 
 ### Step 3: Install a Virtual Env and Put Thonny in it
 
